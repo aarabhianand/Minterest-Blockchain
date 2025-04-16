@@ -1,0 +1,29 @@
+# Node
+node_modules/
+node-modules
+npm-debug.log*
+
+# Build
+build/
+dist/
+
+# Truffle
+artifacts/
+cache/
+
+# React/Vite/Next
+.vite/
+.next/
+out/
+coverage/
+
+# OS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Environment Variables
+.env
+.env.local
