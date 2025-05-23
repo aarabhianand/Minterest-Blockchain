@@ -2,7 +2,7 @@
 
 Minterest is a decentralized NFT marketplace that allows users to seamlessly manage their NFTs. Users can connect to their metamask wallet and, mint unique NFTs, list or unlist their own NFTs, browse a diverse collection of Listed NFTs from other creators, and purchase them.
 
----
+----
 ## Features
 
 - Connect with MetaMask Wallet 
@@ -14,7 +14,7 @@ Minterest is a decentralized NFT marketplace that allows users to seamlessly man
 - Search NFT by URI
 - Browse Listed NFTs and filter by price
 
----
+----
 ## Technologies used
 
 ### Frontend
