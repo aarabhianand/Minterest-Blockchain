@@ -1,6 +1,19 @@
 # Minterest - An NFT Marketplace
 
-Minterest is a decentralized NFT marketplace that allows users to seamlessly manage their NFTs. Users can connect to their metamask wallet and, mint unique NFTs, list or unlist their own NFTs, browse a diverse collection of Listed NFTs from other creators, and purchase them.
+Minterest is a decentralized NFT marketplace that allows users to seamlessly manage their NFTs. Users can connect to their Metamask wallet, mint unique NFTs, list or unlist their own NFTs, browse a diverse collection of Listed NFTs from other creators, and purchase them.
+
+----
+## Table of Contents
+
+- [Features](#features)
+- [DApp Preview](#dapp-preview)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Running the Project](#running-the-project)
+  - [Pre-requisites](#pre-requisites)
+  - [Backend Setup (Truffle)](#backend-setup-truffle)
+  - [Frontend Setup (React)](#frontend-setup-react)
+- [NFTs Creation](#nfts-creation)
 
 ----
 ## Features
@@ -13,6 +26,36 @@ Minterest is a decentralized NFT marketplace that allows users to seamlessly man
 - Unlist NFTs from sale
 - Search NFT by URI
 - Browse Listed NFTs and filter by price
+
+----
+## DApp Preview
+
+**Landing Page**
+![Landing Page](images/Landing_page.png)
+
+**Connect Wallet and Mint NFTs**
+![Profile Page](images/Profile_and_minting_NFTs.png)
+
+**Owned NFTs Page**
+![Owned NFTs](images/NFT_Profile.png)
+
+**List owned NFT for sale / Delete owned NFT**
+![List NFT for sale](images/List_NFT_for_sale.png)
+
+**Update Price of Listed NFT / Unlist NFT from sale**
+![Update Price](images/Update_listed_NFT.png)
+
+**Search for an NFT with a URI**
+![Search NFT](images/Search_NFT.png)
+
+**Browse NFTs listed for sale by others**
+![Browse NFT](images/Browse_Listed_NFTs.png)
+
+**Browse NFTs with Filter applied on maximum price in ETH**
+![Filtered Browse](images/Browse_Listed_NFTs_filtered.png)
+
+**Buy a NFT after Browsing**
+![Buy NFT](images/Buy_Browse_NFT.png)
 
 ----
 ## Technologies used
@@ -137,3 +180,7 @@ npm start
 The app will be available at: [http://localhost:3000](http://localhost:3000)
 
 ---
+
+## NFTs Creation
+
+This app uses Images uploaded to [Pinata](https://pinata.cloud) as NFTs. Any other IPFS platform can be used.
