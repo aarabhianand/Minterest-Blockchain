@@ -1,4 +1,4 @@
-// src/context/WalletContext.js
+// src/pages/WalletContext.js
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const WalletContext = createContext();
@@ -16,11 +16,10 @@ export const WalletProvider = ({ children }) => {
             return;
         }
 
-        // This prompts MetaMask to ask for account access every time
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         setWalletAddress(accounts[0]);
 
-        // Save a flag so we know the user connected manually
+        // Save a flag to know the user connected manually
         localStorage.setItem('isWalletConnected', 'true');
         } catch (err) {
         console.error('Wallet connection error:', err);
@@ -30,7 +29,7 @@ export const WalletProvider = ({ children }) => {
     const resetConnection = async () => {
         if (window.ethereum) {
           try {
-            // Clear permissions (experimental / not always guaranteed to work)
+            // Clear permissions 
             await window.ethereum.request({
               method: 'wallet_requestPermissions',
               params: [{ eth_accounts: {} }],
@@ -39,7 +38,6 @@ export const WalletProvider = ({ children }) => {
             console.warn('Permission reset failed or not supported:', err);
           }
       
-          // Now call connect to prompt
           await connectWallet();
         }
       };

@@ -1,4 +1,4 @@
-// src/components/Profile.js
+// src/pages/Profile.js
 import React, { useState } from 'react';
 import { useWallet } from './walletContext'; 
 import { BrowserProvider, Contract } from 'ethers';

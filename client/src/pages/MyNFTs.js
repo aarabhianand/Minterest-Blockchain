@@ -157,14 +157,14 @@ const MyNfts = () => {
 
   return (
     <div style={{ height: '100vh', flexDirection: 'column' }}>
-      {/* Fixed Header */}
+      
       <div style={{
-  padding: '100px 0',
-  textAlign: 'center',
-  backgroundColor: 'transparent',
-  boxShadow: '0 2px 20px #00f0ff22',
-  color: '#fff',
-}}>
+        padding: '100px 0',
+        textAlign: 'center',
+        backgroundColor: 'transparent',
+        boxShadow: '0 2px 20px #00f0ff22',
+        color: '#fff',
+      }}>
 
         <h1 style={{ margin: '0 0 10px' }}>My NFTs</h1>
         <p style={{ color: '#aaa', margin: 0 }}>
@@ -176,7 +176,6 @@ const MyNfts = () => {
       <div style={{
         flex: 1,
         overflowY: 'auto',
-         // space for fixed header
         padding: '10px',
       }}>
         {myNFTs.length > 0 ? (
@@ -242,7 +241,6 @@ const MyNfts = () => {
         )}
       </div>
 
-      {/* Modal goes here (same as before)... */}
       {selectedNFT && (
         <div style={{
           position: 'fixed',

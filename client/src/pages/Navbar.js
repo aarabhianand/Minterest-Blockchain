@@ -1,4 +1,4 @@
-// src/components/Navbar.js
+// src/pages/Navbar.js
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { FaUser, FaImages, FaSearch, FaStore } from 'react-icons/fa';

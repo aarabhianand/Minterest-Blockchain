@@ -103,6 +103,12 @@ const BrowseNFTs = () => {
     }
   };
 
+  const resetFilter = () => {
+    setMaxPrice('');
+    setFilteredNFTs(listedNFTs);
+  };
+
+
   return (
     <div style={styles.pageContainer}>
       <div style={styles.filterBarContainer}>
@@ -115,6 +121,9 @@ const BrowseNFTs = () => {
         />
         <button onClick={handleFilter} style={styles.filterButton}>
           Filter
+        </button>
+        <button onClick={resetFilter} style={styles.filterButton}>
+          Reset
         </button>
       </div>
 
